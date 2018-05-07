@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<form action ="index.jsp"method = GET   onSubmit="return checkmail(this.Login.value)">
+         Login: <input type = "text"  name = "first_name" required>
+         <br />
+         Password : <input type = "text" name = "last_name" required />
+         <input type = "submit" value = "Submit" />
+        </form>
+        
+        
+          <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+
+	    <script type="text/javascript">
+
+	
+	    function checkmail(value) {
+alert("begin ");
+
+         var passl = document.getElementByid("Login");
+         alert(pass1);
+
+	     reg = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+
+	     if (!value.match(reg)) {alert("Пожалуйста, введите свой настоящий e-mail");
+
+	     document.getElementById('Login').value=""; return false; }
+
+	    }
+	  
+	    </script>
+
+</body>
+</html>
